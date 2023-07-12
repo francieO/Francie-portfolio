@@ -10,88 +10,198 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&family=Montserrat&display=swap"
       rel="stylesheet"
     />
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/385cd164de.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <img src="images/F (1).png" />
+      <a href="#hero"><img src="images/F (1).png" /></a>
 
       <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Resume</a></li>
+        <i class="fa-solid fa-bars hamburger"></i>
+        <i class="fas fa-times close hide"></i>
+
+        <ul class="horizontal-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="resume" href="#resume">Resume</a></li>
         </ul>
+
+        <div>
+          <ul class="hamburger-dropdown hide">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="resume-dropdown" href="#resume">Resume</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <section id="hero">
-      <!-- <img class="star-img" src="images/stars2.png" alt="" /> -->
       <div class="hero-intro">
-        <h1 class="hero-intro-big">FRANCIE OBLINGER</h1>
-        <p class="hero-intro-small">
-          Front-end web developer. <br />
-
-          <!-- Creating Clean and Seamless Digital Experiences <br />with
-            Simplicity and Style. -->
-        </p>
-        <p>
-          <!-- I create clean spaces where form and function co-exist
-            synergistically.  -->
-        </p>
+        <h1 class="hero-intro-big">
+          FRANCIE <br />
+          OBLINGER
+        </h1>
+        <p class="hero-intro-small">Front-end web developer. <br /></p>
+        <p></p>
+        <a href="#about"
+          ><img
+            class="scroll"
+            src="images/Scroll Down 5 (3).svg"
+            alt=""
+            style="width: 60px"
+        /></a>
       </div>
     </section>
 
     <section id="about">
-      <h1>ABOUT</h1>
-      <div class="about-description">
+      <h1 class="line">ABOUT</h1>
+      <div class="text-container">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-          veritatis assumenda quo eum voluptate, voluptatum, ullam dolores,
-          animi iste quos suscipit rem incidunt ut. Odio optio porro saepe
-          cupiditate quo.
+          <!-- Hello! I'm Francie, a self taught front end developer creating sleek and seamless digital experiences where simplicity meets style, keeping functionality and user experience at the forefront. <br> <br> Outside of developing, I enjoy all things food, nutrition, and wellness related. I never miss an episode of the Huberman Lab podcast! I Love outdoor adventures like hiking, kayaking, and camping, good music (currently dabbling at the piano), quality time with loved ones, and my cat. -->
+          Hello! I'm Francie, a self taught front end developer creating digital
+          experiences that blend great design with seamless functionality.
+          <br />
+          <br />
+          Outside of developing, I enjoy all things food, nutrition, and
+          wellness related. Huberman Lab podcast #1 fan! I Love outdoor
+          adventures like hiking, kayaking, and camping, music, quality time
+          with loved ones, and my cat.
         </p>
       </div>
-      <!-- <h1 class="about-h1">ABOUT</h1> -->
-      <div class="about-line"></div>
 
-      <div class="about-container">
-        <div class="profile-pic-container">
-          <img
-            src="images/profilepic.png
+      <div class="profile-pic-container">
+        <img
+          src="images/IMG-2161 (3).jpg
             "
-            alt=""
-          />
-        </div>
-        <div class="about-text-container">
-          <!-- <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-            veritatis assumenda quo eum voluptate, voluptatum, ullam dolores,
-            animi iste quos suscipit rem incidunt ut. Odio optio porro saepe
-            cupiditate quo.
-          </p> -->
-          <ul>
-            <li class="css">
-              <!-- <img class="sun" src="images/sun.svg" alt="" />  -->
-              CSS
-            </li>
+          alt=""
+        />
+      </div>
 
-            <li class="html">HTML</li>
-            <li class="javascript">JavaScript</li>
-            <li class="react">React</li>
-            <li class="git">Git & Github</li>
-          </ul>
+      <div class="skills-container">
+        <div class="row">
+          <span>HTML5</span><span>Git & <br />Github</span
+          ><span>JavaScript</span><span>React</span>
+        </div>
+        <div class="row">
+          <span>CSS</span><span>Chrome <br />DevTools</span
+          ><span>
+            Command<br />
+            Line</span
+          ><span>Responsive <br />Design</span>
         </div>
       </div>
     </section>
 
     <section id="projects">
-      <h1>Projects</h1>
-      <div class="project-image-container">
-        <img src="images/Screenshot 2023-06-02 at 9.42.43 AM.png" alt="" />
-        <img src="images/website.png" alt="" />
+      <h1 class="projects-title line">PROJECTS</h1>
+      <div class="project-container">
+        <div class="screenshots">
+          <img class="desktop" src="images/tspdesktop2.jpg" alt="" />
+          <img class="mobile" src="images/tspmobile3.png" alt="" />
+        </div>
+        <div class="project-description-container">
+          <div class="title-and-links-container">
+            <h2>THE SWEET PROJECT</h2>
+            <div class="github-site-links-container">
+              <a
+                href="https://github.com/francieO/TheSweetProject"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CODE</a
+              ><a
+                href="https://thesweetproject.pages.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >SITE</a
+              >
+            </div>
+          </div>
+          <div>
+            <p>
+              A website I designed and implemented for a client using front end
+              tools and hosted on Cloudfare pages.
+            </p>
+          </div>
+          <div class="tools">
+            <span>REACT</span><span>JAVASCRIPT</span><span>HTML</span
+            ><span>CSS</span>
+          </div>
+        </div>
       </div>
     </section>
+
+    <section id="contact">
+      <img class="footer-logo" src="images/F (1).png" alt="" />
+      <h1>GET IN TOUCH!</h1>
+
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com/francie.oblinger"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/francie.oblinger/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://github.com/francieO"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/francie-oblinger-4521a9128/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          href="mailto:francie.oblinger@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+      </div>
+    </section>
+
+    <footer>
+      Designed and built by me using plain ol' <br />HTML CSS and JavaScript
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
   </body>
 </html>
